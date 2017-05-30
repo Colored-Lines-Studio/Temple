@@ -1,0 +1,99 @@
+// Font and Typography
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600');
+$montserrat:  'Montserrat', sans-serif;
+$accent-color: #c67732;
+body {
+  background: url("../images/bg.jpg") no-repeat 50% 0%;
+  background-size: 85% auto;
+  color: black;
+  background-color: black;
+  font-family: $montserrat;
+  width: 100%;
+  height: 100%;
+}
+
+.body-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  .top-nav {
+    width: 100%;
+    padding: 2% 0%;
+    background-color: rgba(0, 0, 0, .5);
+    height: 15%;
+    hr {
+      width: 250px;
+      border: 1px solid $accent-color;
+    }
+    p {
+      margin: 5px;
+      text-align: center;
+      color: white;
+      font-weight: 100;
+      padding: 0px 50px;
+;
+    }
+    span.title-bold {
+      font-weight: 300;
+    }
+    .action-buttons {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      div[class$="-action-button"] {
+        width: 20px;
+        height: 20px;
+        border: 3px solid $accent-color;
+        transform: rotate(45deg);
+        border-style: double;
+        p {
+          color: white;
+          transform: rotate(45deg);
+          padding: 0;
+          margin: 0% auto;
+        }
+      }
+    }
+  }
+  .bottom-nav {
+    color: $accent-color;
+    font-weight: 300;
+    line-height: 0;
+    position: absolute;
+    bottom: 0;
+    display: inline-flex;
+    height: 12%;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: .4px;
+    .logo {
+      width: 4%;
+      text-align: center;
+    }
+    .side-links {
+      ul {
+        list-style: none;
+      }
+    }
+  }
+}
+
+.bottom-links-left, .bottom-links-right {
+  width: 43%;
+  display: flex;
+  justify-content: space-around;
+  li {
+    display: inline;
+    margin: 0 30px;
+    &:hover {
+      border-bottom: 2px solid grey;
+      cursor: pointer;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+  }
+}
