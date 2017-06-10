@@ -1,66 +1,158 @@
 <!DOCTYPE html>
-<html lang=en>
-<head>
-  <meta charset=UTF-8>
-    <meta http-equiv=X-UA-Compatible content=IE=edge,chrome=1>
-    <meta name=viewport content=width=device-width,initial-scale=1>
-    <link href=https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css
-      rel=stylesheet>
-  <link rel=stylesheet href=./assets/css/main.css type=text/css>
-  <title></title>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.cssrel=stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Temple | welcome</title>
+  </head>
+
   <body>
     <div class="body-container">
       <div class="top-nav">
-        <hr>
-        <p> THE TEMPLE <span class="title-bold">MANAGEMENT COMPANY</span></p>
-        <hr>
+        <hr class="wow hrSlideInLeft" data-wow-duration=".2s" data-wow-delay="0.5s">
+
+        <p class="wow fadeIn">
+          THE TEMPLE <span class="title-bold">MANAGEMENT COMPANY</span>
+        </p>
+
+        <hr class="wow hrSlideInRight" data-wow-duration=".2s" data-wow-delay="0.5s">
+
         <div class="action-buttons">
-          <div class="first-action-button">
+          <div class="first-action-button wow borderFadeIn" data-image-url="assets/images/deji.jpg" data-personal-quote="Ours is an unwavering commitment to acquiring, assessing, developing, promoting and engaging the best talents." data-author-name="Deji Olomojobi" data-author-title="General Counsel/Director, legal" data-wow-delay="1.5s">
             <div class="first-action-button-inner">
               <p>+</p>
             </div>
           </div>
-          <div class="second-action-button">
+
+          <div class="second-action-button wow borderFadeIn" data-image-url="assets/images/idris.jpg" data-personal-quote="Our vision is to become the leading African talent and event management outfit, representing the best talent in entertainment, sports, media, the arts and other areas." data-author-name="Idris Olorunnimbe" data-author-title="CEO and Founder" data-wow-delay="2s">
             <div class="second-action-button-inner">
               <p>+</p>
             </div>
           </div>
-          <div class="third-action-button">
+
+          <div class="third-action-button wow borderFadeIn" data-image-url="assets/images/hamza.jpg" data-personal-quote="We provide our talents with opportunities and tools to enable their success" data-author-name="Hamza Idris Kutigi" data-author-title="Chief Financial Officer" data-wow-delay="2.2s">
             <div class="third-action-button-inner">
               <p>+</p>
             </div>
           </div>
-          <div class="fourth-action-button">
+
+          <div class="fourth-action-button wow borderFadeIn" data-image-url="assets/images/terfa.jpg" data-personal-quote="We work with our clients as partners and focus on developing long term strategies to enhance their brand experience." data-author-name="Terfa Tilley-Gyado" data-author-title="Director, Communications" data-wow-delay="2.5s">
             <div class="fourth-action-button-inner">
               <p>+</p>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="vid-container">
+        <div class="deji-mini-vid">
+          <video width="300">
+            <source src="assets/videos/format/webm/deji.webm">
+            <source src="assets/videos/format/mp4/deji.mp4">
+          </video>
+        </div>
+
+        <div class="idris-mini-vid">
+          <video width="225">
+            <source src="assets/videos/format/webm/idris.webm">
+            <source src="assets/videos/format/mp4/idris.mp4">
+          </video>
+        </div>
+
+        <div class="hamza-mini-vid">
+          <video width="226">
+            <source src="assets/videos/format/webm/hamza.webm">
+            <source src="assets/videos/format/mp4/hamza.mp4">
+          </video>
+        </div>
+
+        <div class="terfa-mini-vid">
+          <video width="294">
+            <source src="assets/videos/format/webm/terfa.webm">
+            <source src="assets/videos/format/mp4/terfa.mp4">
+          </video>
+        </div>
+      </div>
+
       <div class="bottom-nav">
-        <ul class="bottom-links-left">
+        <ul class="bottom-links-left wow fadeInRight" data-wow-delay="1s">
           <li class="about-us"> ABOUT US</li>
           <li class="what-we-do"> WHAT WE DO</li>
           <li class="people"> PEOPLE</li>
-      </ul>
-      <div class="logo"> LOGO</div>
-      <ul class="bottom-links-right">
+        </ul>
+
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="site logo">
+        </div>
+
+        <ul class="bottom-links-right wow fadeInLeft" data-wow-delay="1s">
           <li class="talents">TALENTS</li>
           <li class="news">NEWS</li>
           <li class="contact">CONTACT</li>
         </ul>
-        <!-- <div class="side-links">
-          <ul>
-            <li class="facebook">f</li>
-            <li class="instagram">f</li>
-            <li class="mail">m</li>
-            <li class="sound">s</li>
-          </ul>
-        </div> -->
+      </div>
+
+      <aside class="side-links wow fadeInBounce" data-wow-delay="2.2s" data-wow-duration="0.3s">
+        <ul>
+          <li class="facebook">
+            <a href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+
+          <li class="instagram">
+            <a href="#">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+
+          <li class="mail">
+            <a href="#">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>
+
+          <li class="sound">
+            <a href="#">
+              <i class="fa fa-volume-off"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+    </div>
+
+
+    <div class="modal">
+      <div class="modal-content">
+        <div class="img-wrapper">
+        	<img src="http://placehold.it/250/150" alt="profile" />
+        </div>
+
+        <div class="personal-quote">
+          <p class="quote">
+            We provide our clients with opportunities and talents to help them succeed anywhere in the world
+          </p>
+
+          <p class="quote-author">
+            <span class="author-name">Hamzat Inazochi</span>
+            <span class="title">Chief Financial Officer</span>
+          </p>
+        </div>
       </div>
     </div>
-    <footer>
-    </footer>
+
+    <div class="glow"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="assets/js/selectors.js"></script>
+    <script src="assets/js/show-modal.js"></script>
+    <script src="assets/js/animate-page.js"></script>
+    <script src="assets/js/play-video.js"></script>
   </body>
 </html>
