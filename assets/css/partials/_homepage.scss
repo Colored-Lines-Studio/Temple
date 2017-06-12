@@ -114,12 +114,14 @@ p {
     width: 100%;
     font-size: 14px;
     letter-spacing: .4px;
+    text-align: center;
+    justify-content: center;
 
     .logo {
-      background-color: #111;
       padding: 20px;
       text-align: center;
       margin-top: -10%;
+      width: 10%;
 
       img {
         width: 100px;
@@ -129,7 +131,7 @@ p {
   }
 
   .side-links {
-    background: transparentize($accent-color, .5);
+    background: transparentize($accent-color, .7);
     border: 1px solid $accent-color;
     position: absolute;
     bottom: 20%;
@@ -159,10 +161,10 @@ p {
 }
 
 .bottom-links-left, .bottom-links-right {
-  width: 38%;
+  width: 40%;
   display: flex;
   justify-content: space-around;
-
+  padding: 0px;
   li {
     display: inline;
     margin: 0 30px;
