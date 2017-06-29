@@ -17,10 +17,12 @@
 
   document.addEventListener('click', function (e) {
     showGlow(e.pageX, e.pageY);
+
     setTimeout(function () {
       hideGlow();
-    }, 400)
-    modal.style.transformOrigin = "0 0"; //e.pageX + 'px ' + e.pageY + 'px';
+    }, 400);
+
+    modal.style.transformOrigin = '0 0'; //e.pageX + 'px ' + e.pageY + 'px';
   });
 
   actionBtns.forEach(function (elem) {
@@ -37,7 +39,7 @@
   });
 
   modal.addEventListener('click', function (e) {
-    if (e.target.className === 'modal') {
+    if (e.target.className.match(/modal|fa-close/)) {
       this.style.transform = 'scale(0)';
     }
   })

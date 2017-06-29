@@ -12,7 +12,24 @@
   </head>
 
   <body>
+    <nav class="mobile-nav-links">
+      <ul>
+        <li class="about-us"> <a href="#">ABOUT US</a></li>
+        <li class="what-we-do"> <a href="#">WHAT WE DO</a></li>
+        <li class="people"> <a href="#">PEOPLE</a></li>
+
+        <li class="talents"><a href="#">TALENTS</a></li>
+        <li class="news"><a href="#">NEWS</a></li>
+        <li class="contact"><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+
     <div class="body-container">
+      <div class="mobile-logo">
+        <i class="fa fa-navicon"></i>
+        <img src="assets/images/logo.png" alt="site logo">
+      </div>
+
       <div class="top-nav">
         <hr class="wow hrSlideInLeft" data-wow-duration=".2s" data-wow-delay="0.5s">
 
@@ -81,9 +98,9 @@
 
       <div class="bottom-nav">
         <ul class="bottom-links-left wow fadeInRight" data-wow-delay="1s">
-          <li class="about-us"> ABOUT US</li>
-          <li class="what-we-do"> WHAT WE DO</li>
-          <li class="people"> PEOPLE</li>
+          <li class="about-us"> <a href="#">ABOUT US</a></li>
+          <li class="what-we-do"> <a href="#">WHAT WE DO</a></li>
+          <li class="people"> <a href="#">PEOPLE</a></li>
         </ul>
 
         <div class="logo">
@@ -91,9 +108,9 @@
         </div>
 
         <ul class="bottom-links-right wow fadeInLeft" data-wow-delay="1s">
-          <li class="talents">TALENTS</li>
-          <li class="news">NEWS</li>
-          <li class="contact">CONTACT</li>
+          <li class="talents"><a href="#">TALENTS</a></li>
+          <li class="news"><a href="#">NEWS</a></li>
+          <li class="contact"><a href="#">CONTACT</a></li>
         </ul>
       </div>
 
@@ -130,6 +147,10 @@
 
     <div class="modal">
       <div class="modal-content">
+        <div class="close-modal">
+          <span class="fa fa-close"></span>
+        </div>
+
         <div class="img-wrapper">
         	<img src="http://placehold.it/250/150" alt="profile" />
         </div>
@@ -159,5 +180,6 @@
     <script src="assets/js/animate-page.js"></script>
     <script src="assets/js/play-video.js"></script>
     <script src="assets/js/play-audio.js"></script>
+    <script src="assets/js/mobile-nav.js"></script>
   </body>
 </html>
