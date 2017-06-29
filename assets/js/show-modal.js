@@ -26,16 +26,24 @@
   });
 
   actionBtns.forEach(function (elem) {
-    elem.addEventListener('click', function () {
+    elem.addEventListener('click', function (e) {
+
       modal.style.transform = 'scale(1)';
 
-      var modalContent = modal.querySelector('.modal-content');
+      var modalContent = modal.querySelector('.modal-content'),
+          imgs = modalContent.querySelectorAll('img'),
+          img = modalContent.querySelector('[data-belongs-to=' + this.dataset.owner + ']')
 
       modalContent.querySelector('.quote').textContent = this.dataset.personalQuote;
       modalContent.querySelector('.author-name').textContent = this.dataset.authorName;
       modalContent.querySelector('.title').textContent = this.dataset.authorTitle;
-      modalContent.querySelector('.img-wrapper img').src = this.dataset.imageUrl;
-    })
+
+      imgs.forEach(function (img) {
+        img.style.display = 'none';
+      });
+      img.style.display = 'block';
+
+    });
   });
 
   modal.addEventListener('click', function (e) {
