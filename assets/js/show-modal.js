@@ -41,7 +41,7 @@
       imgs.forEach(function (img) {
         img.style.display = 'none';
       });
-      img.style.display = 'block';
+      img.style.display = 'inline-block';
 
     });
   });

@@ -13,7 +13,7 @@
       this.classList.remove('fa-close');
       this.classList.add('fa-navicon');
     }  else {
-      bodyContainer.style.transform = 'translateX(35%)';
+      bodyContainer.style.transform = 'translateX(40%)';
       navLinks.style.transform = 'translateX(-8px)';
 
       this.classList.remove('fa-navicon');
