@@ -144,9 +144,39 @@ p {
       left: 0;
     }
 
+    @media screen and ( min-width: 769px ) and (max-width: 1279px) {
+      left: 2%;
+    }
+
     [class$="-mini-vid"] {
       float: left;
       margin-left: -1px;
+    }
+
+    .deji-mini-vid {
+      video {
+        @media screen and ( min-width: 769px ) and (max-width: 1279px) {
+          width: 219px;
+        }
+      }
+    }
+
+    .idris-mini-vid video {
+      @media screen and ( min-width: 769px ) and (max-width: 1279px) {
+        width: 165px;
+      }
+    }
+
+    .hamza-mini-vid video {
+      @media screen and ( min-width: 769px ) and (max-width: 1279px) {
+        width: 165px;
+      }
+    }
+
+    .terfa-mini-vid video {
+      @media screen and ( min-width: 769px ) and (max-width: 1279px) {
+        width: 215px;
+      }
     }
   }
 
@@ -162,6 +192,10 @@ p {
     letter-spacing: .4px;
     text-align: center;
     justify-content: center;
+
+    @media screen and ( min-width: 769px ) and (max-width: 1279px) {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
 
     a {
       color: inherit;
@@ -218,6 +252,10 @@ p {
 
   @media screen and (min-width: 1550px) {
     width: 30%;
+  }
+  @media screen and ( min-width: 769px ) and (max-width: 1279px) {
+    line-height: 18px;
+    font-size: 10px;
   }
 
   li {
